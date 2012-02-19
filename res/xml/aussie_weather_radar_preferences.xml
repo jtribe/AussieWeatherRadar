@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+	<PreferenceCategory android:title="File Storage Settings"
+		android:key="file_storage_pref">
+		<CheckBoxPreference android:key="cache_pref"
+			android:title="Offline Storage"
+			android:summary="Select to cache static images into your SD Card"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+	<PreferenceCategory android:title="Map Features">
+		<CheckBoxPreference android:key="location_pref"
+			android:title="Location" android:summary="Select to display Location"
+			android:defaultValue="true" />
+
+		<CheckBoxPreference android:key="range_pref"
+			android:title="Range" android:summary="Select to display Range"
+			android:defaultValue="true" />
+
+		<CheckBoxPreference android:key="topo_pref"
+			android:title="Topography" android:summary="Select to display Topography"
+			android:defaultValue="true" />
+	</PreferenceCategory>
+</PreferenceScreen>

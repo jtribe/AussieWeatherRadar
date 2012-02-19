@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aussie Weather Radar</string>
+    
+    <string name="settings">Settings</string>
+    <string name="radar">Radar</string>
+    <string name="km64">64 KM</string>
+    <string name="km128">128 KM</string>
+    <string name="km256">256 KM</string>
+    <string name="km512">512 KM</string>
+    <string name="map">Map</string>
+    
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:id="@+id/viewgroup">
+
+	<ImageView android:id="@+id/background" android:layout_width="fill_parent" 
+	    android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+		android:layout_height="fill_parent" android:scaleType="centerCrop"/>
+
+	<ImageView android:id="@+id/topography" android:layout_width="fill_parent" android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"  android:scaleType="centerCrop"
+		android:layout_height="fill_parent"/>
+
+
+	<ViewFlipper android:layout_width="fill_parent" android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true" android:flipInterval="500"
+		android:layout_height="fill_parent" android:id="@+id/animationVG">
+
+			<ImageView android:id="@+id/frame1" android:layout_width="fill_parent" android:scaleType="centerCrop"
+				android:layout_height="fill_parent"/>
+			<ImageView android:id="@+id/frame2" android:layout_width="fill_parent" android:scaleType="centerCrop"
+				android:layout_height="fill_parent"/>
+			<ImageView android:id="@+id/frame3" android:layout_width="fill_parent" android:scaleType="centerCrop"
+				android:layout_height="fill_parent"/>
+		
+	</ViewFlipper>
+
+	<ImageView android:id="@+id/location" android:layout_width="fill_parent" android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+		android:layout_height="fill_parent" android:scaleType="centerCrop" />
+
+
+
+	<ImageView android:id="@+id/range" android:layout_width="fill_parent" android:layout_alignParentLeft="true"
+	    android:layout_alignParentTop="true"
+		android:layout_height="fill_parent" android:scaleType="centerCrop" />
+
+	<TextView android:id="@+id/progress_text" android:paddingLeft="5dp"
+		android:paddingRight="5dp" android:layout_height="wrap_content"
+		android:layout_width="wrap_content" android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true" android:textColor="#FFFFFFFF"
+		android:text="Loading ..." android:textSize="15dp" android:background="#44000000"
+		android:visibility="gone" />
+
+	<RelativeLayout android:layout_width="wrap_content"   android:layout_centerHorizontal="true"
+		android:layout_height="wrap_content" android:id="@+id/timeVG">
+	</RelativeLayout>
+
+	<ProgressBar android:id="@+android:id/progress_bar"
+		style="?android:attr/progressBarStyleLarge" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_centerVertical="true"
+		android:layout_centerHorizontal="true" android:visibility="gone" />
+</RelativeLayout>

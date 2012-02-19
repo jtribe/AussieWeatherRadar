@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/settings"
+        android:title="@string/settings">
+    </item>
+    <item
+        android:id="@+id/radar"
+        android:title="@string/radar">
+        <menu>
+            <item
+                android:id="@+id/km64"
+                android:title="@string/km64"/>
+            <item
+                android:id="@+id/km128"
+                android:title="@string/km128"/>
+            <item
+                android:id="@+id/km256"
+                android:title="@string/km256"/>
+            <item
+                android:id="@+id/km512"
+                android:title="@string/km512"/>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/map"
+        android:title="@string/map">
+    </item>
+
+</menu>
